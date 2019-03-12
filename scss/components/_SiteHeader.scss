@@ -1,0 +1,44 @@
+.SiteHeader {
+
+  &--root {
+    background-color: white;
+    border-top: 3px solid $red;
+    display: block;
+    text-align: center;
+  }
+
+  &--container {
+    max-width: $column;
+    margin: auto;
+    padding: $pad / 2 $pad;
+  }
+
+  &--logo {
+    font-weight: 400;
+    >a {
+      color: black;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &--title {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: $pad / 2;
+  }
+
+  &--subtitle {
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+  }
+
+  &--nav {
+    border-bottom: 1px solid $light;
+    margin: auto;
+    max-width: $column; 
+  }
+
+}

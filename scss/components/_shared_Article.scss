@@ -1,0 +1,42 @@
+.shared_Article {
+  
+  &--root {
+    background-color: white;
+    padding: $pad;
+  }
+
+  &--container {
+    @extend .layout--flex-container;
+    align-items: flex-start;
+    max-width: $column;
+    margin: auto;
+    position: relative;
+  }
+
+  &--main {
+    @extend .layout--flex-item;
+    @include desktop {
+      flex: 0 0 auto;
+      width: 650px;
+    }
+  }
+  
+  &--sidebar {
+    @extend .layout--flex-item;
+    @include desktop {
+      padding-left: $pad * 2;
+    }
+  }
+
+  &--title {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &--date {
+    color: $gray;
+    font-size: 11px;
+    font-style: italic;
+  }
+
+}

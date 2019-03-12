@@ -1,0 +1,27 @@
+.Post {
+  
+  &--root {
+    @extend .shared_Article--root;
+  }
+
+  &--container {
+    @extend .shared_Article--container;
+  }
+
+  &--main {
+    @extend .shared_Article--main;
+  }
+
+  &--sidebar {
+    @extend .shared_Article--sidebar;
+  }
+
+  &--title {
+    @extend .shared_Article--title;
+  }
+
+  &--date {
+    @extend .shared_Article--date;
+  }
+
+}

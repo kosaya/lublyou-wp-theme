@@ -1,0 +1,46 @@
+.PostTeaser {
+  
+  &--root {
+    border: 1px solid $light;
+    box-shadow: 0 5px 10px $light;
+    color: black;
+    &:hover {
+      color: $red;
+      border: 1px solid transparent;
+      box-shadow: none;
+    }
+  }
+
+  &--image {
+    width: 100%;
+    padding-bottom: 70%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    transition: all $trans;
+  }
+
+  &--header {
+    padding: $pad;
+  }
+
+  &--title {
+    margin-top: 0;
+    margin-bottom: $pad;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &--date {
+    @extend .shared_Article--date;
+  }
+
+  &--excerpt {
+    border-top: 1px solid $light;
+    padding: 0 $pad;
+    padding-bottom: $pad / 2;
+  }
+
+}

@@ -1,0 +1,85 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: $body-font, serif;
+  font-weight: 300;
+  font-size: 85%;
+  @media screen and (min-width: $column*0.75) {
+    font-size: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font, $body-font, serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: $pad;
+  margin-bottom: $pad;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+  font-size: 110%;
+}
+h4 {
+  font-size: 110%;
+}
+h5 {
+  font-size: 90%; 
+}
+h6 {
+  font-size: 80%; 
+}
+
+p, ul, ol {
+  font-size: 90%;
+  line-height: 1.9;
+  margin-top: $pad;
+  margin-bottom: $pad;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  transition: $trans;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+blockquote {
+  background-color: $white;
+  font-style: italic;
+  font-size: 120%;
+  color: #555;
+  padding: $pad/2;
+  p {
+    padding: 0;
+    margin: $pad/2 0;
+  }
+  cite {
+    display: block;
+    font-style: normal;
+    color: black;
+    text-align: right;
+    padding-top: $pad/2;
+    margin-top: $pad/2;
+  }
+}
+
+hr {
+  background-color: $light;
+  border: 0;
+  height: 1px;
+  margin: $pad*2;
+}
+
+.screen-reader-text {
+  display: none;
+}

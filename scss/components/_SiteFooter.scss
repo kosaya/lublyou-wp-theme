@@ -1,0 +1,38 @@
+.SiteFooter {
+  
+  &--root {
+    background-color: $red;
+  }
+
+  &--container {
+    @extend .layout--flex-container;
+    align-items: flex-start;
+    max-width: $column;
+    margin: auto;
+  }
+
+  &--copyright {
+    color: white;
+    font-size: 11px;
+    line-height: 1.9;
+    padding: $pad;
+    @include desktop {
+      flex: 0 0 auto;
+      width: 300px;
+    }
+  }
+
+  &--disclaimer {
+    color: white;
+    font-size: 11px;
+    line-height: 1.9;
+    padding: $pad;
+    @include desktop {
+      flex: 1 1 auto;
+    }
+    a {
+      color: $straw;
+    }
+  }
+
+}

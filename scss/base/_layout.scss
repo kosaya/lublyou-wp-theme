@@ -1,0 +1,23 @@
+body, html {
+  background-color: $red;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.layout--flex-container {
+  display: block;
+  @include desktop {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.layout--flex-item {
+  display: block;
+  @include desktop {
+    flex: 0 1 auto;
+  }
+}

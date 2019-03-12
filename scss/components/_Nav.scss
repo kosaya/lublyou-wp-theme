@@ -1,0 +1,20 @@
+.Nav {
+
+  &--root {
+    display: block;
+  }
+
+  &--mobile-toggle {
+    font-family: $heading-font;
+    border: 1px solid $light;
+    color: black;
+    display: block;
+    letter-spacing: 1px;
+    padding: $pad;
+    text-transform: uppercase;
+    @include desktop {
+      display: none;
+    }
+  }
+
+}

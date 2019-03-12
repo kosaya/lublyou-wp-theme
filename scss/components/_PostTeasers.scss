@@ -1,0 +1,61 @@
+.PostTeasers {
+  
+  &--root {
+    background-color: white;
+    padding: $pad;
+  }
+
+  &--container {
+    @extend .layout--flex-container;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: $column * 1.5;
+    margin: auto;
+  }
+
+  &--category {
+    font-size: 250%;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-bottom: $pad;
+    text-transform: lowercase;
+    text-align: center;
+  }
+
+  &--page {
+    text-align: center;
+  }
+
+  &--teaser {
+    @extend .layout--flex-item;
+    flex: 0 1 auto;
+    width: 100%;
+    margin-bottom: $pad;
+    @include desktop {
+      width: calc(33.33% - 15px);
+    }
+  }
+
+  &--nav {
+    background-color: white;
+    border-bottom: 1px solid $light;
+    border-top: 1px solid $light;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  &--nav-prev,
+  &--nav-next {
+    display: block;
+    flex: 1 1 auto;
+    a {
+      display: block;
+      padding: $pad;
+    }
+  }
+
+}

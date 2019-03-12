@@ -1,0 +1,88 @@
+form,
+.form {
+  position: relative; 
+}
+
+input, textarea {
+  border: 1px solid $light;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  padding: $pad;
+  margin: 0;
+  width: 100%;
+  &:focus {
+    outline: none; 
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  background-color: $opaque;
+  display: block;
+  line-height: 1;
+  margin-top: $pad;
+  margin-bottom: $pad/2;
+}
+
+.required>label::after {
+  content: " *";
+}
+
+.group {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+}
+
+button,
+.button,
+input.button {
+  border: 1px solid $light;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size: 100%;
+  max-width: 200px;
+  padding: $pad;
+  margin: 0;
+  position: relative;
+  &:focus {
+    outline: none; 
+  }
+  &:hover {
+    background-color: $opaque + $brighten;
+  }
+}
+
+button.toggle,
+.button.toggle,
+input.button.toggle {
+  border: 0;
+  border-top: 1px solid $light;
+  box-shadow: 0 3px 1px $light;
+  background-color: white;
+  color: $charcoal;
+  font-family: $heading-font;
+  letter-spacing: 2px;
+  max-width: 100%;
+  text-transform: uppercase;
+  @media screen and (min-width: $column*0.75) {
+    display: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.deferred {
+  background: $light;
+}

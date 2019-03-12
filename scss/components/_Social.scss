@@ -1,0 +1,17 @@
+.Social {
+  
+  &--root {
+    display: flex;
+    list-style: none;
+    margin: $pad 0;
+    padding: 0;
+  }
+
+  &--network {
+    flex: 1 1 auto;
+    a {
+      font-size: 30px;
+    }
+  }
+
+}
